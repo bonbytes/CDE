@@ -1,0 +1,1 @@
+Those files have to be stores in ~/tmux/ to function properly.
