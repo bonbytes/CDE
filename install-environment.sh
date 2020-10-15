@@ -4,12 +4,12 @@ echo "Copying files to appropriate places..."
 echo ""
 mkdir -p ~/.config/micro
 
-#cp ./.bashrc ~/
+cp ./.bashrc ~/
 cp ./.tmux.conf ~/
-#cp ./.xinitrc ~/
-#cp ./.Xresources ~/
-#cp ./settings.json ~/.config/micro
-#cp -r ./tmux ~/
+cp ./.xinitrc ~/
+cp ./.Xresources ~/
+cp ./settings.json ~/.config/micro
+cp -r ./tmux ~/
 
 echo "BDE successfully installed. Happy Coding!"
 echo ""
