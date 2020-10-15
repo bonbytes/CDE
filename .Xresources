@@ -29,4 +29,4 @@ xterm*rightScrollBar: true
 xterm*ScrollBar:      true
 
 *VT100.scrollbar.thumb: black
-*VT100.scrollbar.width: 14
+*VT100.scrollbar.width: 1
