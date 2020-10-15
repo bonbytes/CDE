@@ -2,5 +2,6 @@
     "savecursor": true,
     "scrollbar": true,
     "scrollspeed": 4,
-    "softwrap": true
+    "softwrap": true,
+    "basename": true
 }
