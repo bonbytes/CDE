@@ -4,15 +4,15 @@ echo "Installing packages..."
 echo ""
 
 # Install micro editor
-MICRO=/usr/bin/micro
+MICRO=/usr/local/bin/micro
 if [ -f "$MICRO" ]; then
     echo "$MICRO already exists!"
 else
     echo "$MICRO does not exist!"
     echo "Going to install it with curl..."
     curl https://getmic.ro | bash
-    echo "Copy micro to /usr/bin to make it accessible..."  
-    sudo mv ./micro /usr/bin
+    echo "Copy micro to /usr/local/bin to make it accessible..."  
+    sudo mv ./micro /usr/local/bin
     echo "micro successfully installed!"    
 fi
 echo ""
