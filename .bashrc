@@ -117,4 +117,4 @@ alias ll='ls -alF'
 alias ..='cd ..'
 
 # Overwrite TERM to support 256 colors
-TERM=xterm-256color
+export TERM=xterm-256color
