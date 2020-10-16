@@ -19,7 +19,7 @@ echo ""
 
 # Install packages from apt
 sudo apt update && apt upgrade
-sudo apt install vim tmux xclip pigpio cppman cppcheck cmake xserver-xorg xterm xinit --assume-yes
+sudo apt install vim tmux xclip pigpio cppman cppcheck cmake xserver-xorg xterm xinit xrdb --assume-yes
 
 # Clone submodules (tmux-plugin)
 git submodule init
