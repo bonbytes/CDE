@@ -1,5 +1,5 @@
 xterm*faceName: Liberation Mono Regular
-xterm*faceSize: 11
+xterm*faceSize: 10
 
 xterm*loginShell: true
 xterm*savelines: 2048
