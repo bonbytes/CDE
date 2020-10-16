@@ -118,3 +118,7 @@ alias ..='cd ..'
 
 # Overwrite TERM to support 256 colors
 export TERM=xterm-256color
+
+if [ -z $DISPLAY ]; then
+	startx
+fi
