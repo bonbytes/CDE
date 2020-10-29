@@ -1,6 +1,11 @@
 # ConsoleDevelopmentEnvironment (CDE)
 
-## Description
+## Table of contents
+* [General info](#general-info)
+* [Installation](#installation)
+* [Development workflow](#development-workflow)
+
+## General info
 This repository offers useful files and plugins regarding console development including mouse-support using xserver and xterm in combination with tmux and micro. 
 There is an installation script, which gets necessary packages and copies dotFiles of CDE into respective places.
 Since the install-script overwrites xserver-related settings, it should only be executed from "console-only" machines which are in an early stage of set-up. 
