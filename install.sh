@@ -39,7 +39,7 @@ echo ""
 mkdir -p ~/.config/micro
 
 # Append text from bashrc_additions
-echo 'source ~/cde/bashrc_additions' >> ~/.bashrc
+echo 'source ~/CDE/bashrc_additions' >> ~/.bashrc
 
 cp ./tmux.conf ~/.tmux.conf
 cp ./xinitrc ~/.xinitrc
