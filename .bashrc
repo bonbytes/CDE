@@ -115,6 +115,9 @@ fi
 # Custom settings
 alias ll='ls -alF'
 alias ..='cd ..'
+alias gitl=git log --graph --decorate --oneline
+alias gits=git status --short
+
 
 # Overwrite TERM to support 256 colors
 export TERM=xterm-256color
