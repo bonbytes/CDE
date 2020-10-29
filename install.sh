@@ -38,11 +38,8 @@ echo "Copying files to appropriate places..."
 echo ""
 mkdir -p ~/.config/micro
 
-# Append text from .bashrc_additions
-BASHRCADDS=cat ./bashrc_additions
-if [ "$BASHRCADDS" != "" ]; then
-      echo $BASHRCADDS >> ~/.bashrc
-fi
+# Append text from bashrc_additions
+echo 'source ~/cde/bashrc_additions' >> ~/.bashrc
 
 cp ./tmux.conf ~/.tmux.conf
 cp ./xinitrc ~/.xinitrc
