@@ -118,6 +118,15 @@ alias ..='cd ..'
 alias gitl='git log --graph --decorate --oneline'
 alias gits='git status --short'
 
+#Find string in files:
+stringgrep() {
+   grep $1 -e $2 -rnw
+}
+
+#Find files:
+filegrep() {
+	find $1 | grep $2
+}
 
 # Overwrite TERM to support 256 colors
 export TERM=xterm-256color
