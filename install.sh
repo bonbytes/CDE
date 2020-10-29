@@ -1,4 +1,4 @@
-#!/bin/bash
+##!/bin/bash
 
 echo "Installing packages..."
 echo ""
@@ -52,5 +52,10 @@ cp ./settings.json ~/.config/micro
 # copy .tmux folder
 cp -r ./tmux/ ~/.tmux
 
+# copy template-project
+cp -r ./template/ ~/hello
+
 echo "CDE successfully installed. Happy Coding!"
+echo "Template-Project (hello) has been copied to ~"
+echo ""
 echo ""

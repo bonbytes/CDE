@@ -1,0 +1,14 @@
+#
+# Files
+#
+*.o
+*.d
+*.su
+*.i
+*.lst
+*.elf
+*.swp
+*.bin
+*.db
+*.db-wal
+*.db-shm
