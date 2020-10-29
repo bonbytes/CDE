@@ -18,10 +18,15 @@ fi
 echo ""
 
 # Install packages from apt
-sudo apt update && apt upgrade
-sudo apt install vim tmux xclip pigpio cppman cppcheck cmake xserver-xorg xterm xinit xrdb --assume-yes
+sudo apt update
+sudo apt upgrade
 
-# Clone submodules (tmux-plugin)
+sudo apt install vim tmux xclip cppman cppcheck cmake xserver-xorg xterm xinit xrdb --assume-yes
+
+# Only for RasPi
+sudo apt install pigpio --assume-yes
+
+# Clone submodules (tmux-plugins)
 git submodule init
 git submodule update
 
@@ -33,18 +38,19 @@ echo "Copying files to appropriate places..."
 echo ""
 mkdir -p ~/.config/micro
 
-cp ./.bashrc ~/
-cp ./.tmux.conf ~/
-cp ./.xinitrc ~/
-cp ./.Xresources ~/
+# Append text from .bashrc_additions
+BASHRCADDS=cat ./bashrc_additions
+if [ "$BASHRCADDS" != "" ]; then
+      echo $BASHRCADDS >> ~/.bashrc
+fi
+
+cp ./tmux.conf ~/.tmux.conf
+cp ./xinitrc ~/.xinitrc
+cp ./Xresources ~/.Xresources
 cp ./settings.json ~/.config/micro
-cp -r ./tmux ~/
 
-echo "BDE successfully installed. Happy Coding!"
-echo ""
-echo "Next step is to clone the software:"
-echo "git clone https://gitlab.cc-asp.fraunhofer.de/bogy/ameise.git"
-echo ""
-echo ""
+# copy .tmux folder
+cp -r ./tmux/ ~/.tmux
 
-cd ~
+echo "CDE successfully installed. Happy Coding!"
+echo ""
