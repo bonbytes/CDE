@@ -6,7 +6,7 @@
 //#include <pigpio.h>
 //#include "pins.h"
 
-using namespace std;
+//using namespace std;
 
 int main(int argc, char** argv)
 {
@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 	//	return -1;
 	//}
 	    
-    cout << "Hallo BOGY!" << endl;
+    std::cout << "Hallo BOGY!" << std::endl;
     
     //gpioTerminate();
     return 0;

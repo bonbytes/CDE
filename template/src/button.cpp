@@ -15,7 +15,7 @@ void buttonISRCallback()
 }
 
 /* Schlafen für s Sekunden... */
-void sleep(double s)
+void sleep(float s)
 {
 	// TODO
 }
