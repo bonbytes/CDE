@@ -20,8 +20,7 @@ echo ""
 # Install packages from apt
 sudo apt update
 sudo apt upgrade
-
-sudo apt install vim tmux xclip cppman cppcheck cmake xserver-xorg xterm xinit xrdb --assume-yes
+sudo apt install vim tmux xclip cppman cppcheck cmake xserver-xorg xterm xinit x11-xserver-utils --assume-yes
 
 # Only for RasPi
 sudo apt install pigpio --assume-yes
@@ -39,7 +38,7 @@ echo ""
 mkdir -p ~/.config/micro
 
 # Append text from bashrc_additions
-echo 'source ~/CDE/bashrc_additions' >> ~/.bashrc
+echo 'source ~/.cde/bashrc_additions' >> ~/.bashrc
 
 cp ./tmux.conf ~/.tmux.conf
 cp ./xinitrc ~/.xinitrc
@@ -50,9 +49,15 @@ cp ./settings.json ~/.config/micro
 cp -r ./tmux/ ~/.tmux
 
 # copy template-project
-cp -r ./template/ ~/hello
+#cp -r ./template/ ~/hello
 
-echo "CDE successfully installed. Happy Coding!"
-echo "Template-Project (hello) has been copied to ~"
+# move CDE folder to ~/.cde
+cd ..
+mv ./cde/ ~/.cde
+cd ~
+
+echo "CDE successfully installed to ~/.cde/"
+echo "Happy Coding!"
+#echo "Template-Project (hello) has been copied to ~"
 echo ""
 echo ""
