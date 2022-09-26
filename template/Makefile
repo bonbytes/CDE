@@ -12,19 +12,19 @@ all: hello hello2
 	@echo "\n# Alles fertig!"
 
 clean:
-	@rm bin/* a.out -fv
+	@rm build/* a.out -fv
 
 hello: hello.o
 	@echo "\n# Linke hello..."
-	g++ -o bin/hello bin/hello.o bin/blub.o $(LDFLAGS)
+	g++ -o build/hello build/hello.o build/blub.o $(LDFLAGS)
 	
 hello.o: src/hello.cpp
 	@echo "\n# Kompiliere hello..."
-	g++ -c src/hello.cpp -o bin/hello.o $(CFLAGS)
-	g++ -c src/blub.cpp -o bin/blub.o $(CFLAGS)
+	g++ -c src/hello.cpp -o build/hello.o $(CFLAGS)
+	g++ -c src/blub.cpp -o build/blub.o $(CFLAGS)
 
 # compilation and linking combined into one command
 hello2:
 	@echo "\n # Kompiliere & linke hello..."
-	g++ -o bin/hello2 src/hello.cpp src/blub.cpp $(LDFLAGS) $(CFLAGS)
+	g++ -o build/hello2 src/hello.cpp src/blub.cpp $(LDFLAGS) $(CFLAGS)
 
