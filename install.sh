@@ -53,7 +53,7 @@ cp -r ./tmux/ ~/.tmux
 
 # move CDE folder to ~/.cde
 cd ..
-mv ./cde/ ~/.cde
+mv ./CDE/ ~/.cde
 cd ~
 
 echo "CDE successfully installed to ~/.cde/"
